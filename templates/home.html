@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joshi Classes</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+<body>
+    <nav id ="navbar"class="navbar">
+        <div class="logo">
+            <img src="logo.jpg" alt="">
+        </div>
+        <ul>
+            <li><a href="#cont">Home</a></li>
+            <li><a href="#subjects">Our Subject</a></li>
+            <li><a href="#sponsers">Sponsers</a></li>
+            <li><a href="#form">Registration</a></li>
+            </ul> 
+    </nav>
+   
+    <section  id ="cont"class="container">
+        
+            <h1 class="primary">Welcome to Joshi Classes</h1>
+            <h3 class="secondry">Your Success Our Responsibility</h3>
+            
+            <p> We will entertain you by delivering some good speech and facts on a particular topic. The center will help you to practice more work by the huge pressure of home work so that you can be able to make a good result in your exam.</p>
+
+        
+    </section>
+    <section class="section">
+        <h1 id="sub"class="subprimary">Our Subjects</h1>
+        <div id="subjects">
+            <div class="box">
+                <img class="physics" src="/static/physics.jpg" alt="">
+            </div>
+            <div class="box">
+                <img class="physics" src="/static/chemistry.jpg" alt="">
+            </div>
+            <div class="box">
+                <img class="physics" src="/static/math1.jpg" alt="">
+            </div>
+            <div class="box">
+                <img class="computer" src="/static/computer1.jpg" alt="">
+            </div>
+        </div>    
+    </section>
+    <section class="sec">
+        <div>
+            <h1 class="subprimary">Our Sponsers</h1>
+        </div>
+        <div id="sponsers">
+            <div>
+                <img class="photo" src="/static/img5.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo" src="/static/img2.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo" src="/static/img3.jpg" alt="">
+            </div>
+            <div>
+                <img class="photo" src="/static/img7.jpg" alt="">
+            </div>
+            
+
+        </div>
+    </section>
+    <section class="form">
+        <div>
+            <h1 id="sub"class="subprimary">Registration Form</h1>
+        </div>
+        <div id="form">
+            <form action="/" method="post">
+                {%csrf_token %}
+                <input type="text" name="name" placeholder="Enter Your Name">
+                <input type="email" name="email" placeholder="Enter Your Email">
+                <input type="phone" name="phone" placeholder="Enter Your Contact Number">
+                <input type="text" name="subject" placeholder="Enter Subject/Subjects Which You Want to Study">
+                <input type="text" name="address" placeholder="Enter Your Address">
+                <button class="btn">Submit</button>
+            </form>
+        </div>
+    </section>    
+    
+</body>
+</html>
